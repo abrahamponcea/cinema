@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', {root: 'public'})
 })
 
+app.get('/buyticket', (req, res) => {
+    res.sendFile('buyTicket.html', {root: 'public'})
+})
+
 
 
 
