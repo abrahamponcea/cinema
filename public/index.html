@@ -5,21 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
-    <section class="slider">
-        <div class="slider-item">
-            <img src="./img/avatar_background.jpeg" alt="">
-            <h1>AVATAR</h1>
-            <h2>EL camino del agua</h2>
-            <button href="/buyticket">Comprar Boleto</button>
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bx-movie-play'></i> CineDICIS
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#peliculas">Peliculas</a></li>
+            <li><a href="#estrenos">Estrenos</a></li>
+            <li><a href="#newsletter">NewsLetter</a></li>
+        </ul>
+    </header>
+
+    <!-- home -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./img/avatar_background.jpeg" alt="">
+                <div class="home-text">
+                    <span>Vengan  a verla</span>
+                    <h1>Avatar: El Camino <br> Del Agua</h1>
+                    <a href="#" class="btn"> Reserva Ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/cenicienta.jpg" alt="">
+                <div class="home-text">
+                    <span>Vengan  a verla</span>
+                    <h1>Tres Deseos Para Cenicienta</h1>
+                    <a href="#" class="btn"> Reserva Ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/elpoderosovictoria.jpg" alt="">
+                <div class="home-text">
+                    <span>Vengan  a verla</span>
+                    <h1>El Poderoso Victoria</h1>
+                    <a href="#" class="btn"> Reserva Ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/malevolo.jpg" alt="">
+                <div class="home-text">
+                    <span>Vengan  a verla</span>
+                    <h1>Malevolo: Mucho miedo <br> Mucho miedo </h1>
+                    <a href="#" class="btn"> Reserva Ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="slider-item">
-            <img src="./img/avatar_background.jpeg" alt="">
-            <h1>AVATAR</h1>
-            <h2>EL camino del agua</h2>
-            <button href="/buyticket">Comprar Boleto</button>
+
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- peliculas -->
+    <section class="movies" id="movies">
+        <h2 class="heading">Estrenos esta semana</h2> 
+        <br>
+        <div class="movies-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/avatarposter.jpg" alt="">
+                </div>
+                <h3>Avatar</h3>
+                <span>192 min | Accion\Ficcion</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/nochesinpaz.jpg" alt="">
+                </div>
+                <h3>Noche sin paz</h3>
+                <span>119 min | Accion\Fantansia</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/mundoextraño.jpg" alt="">
+                </div>
+                <h3>Un mundo extraño</h3>
+                <span>90 min | Animacion/Infantil</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/malevolo.jpg" alt="">
+                </div>
+                <h3>Malevolo</h3>
+                <span>112 min | Terror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/maremoto.jpg" alt="">
+                </div>
+                <h3>Maremoto</h3>
+                <span>106 min | Thriller/Suspenso</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/elpoderosovictoria.jpg" alt="">
+                </div>
+                <h3>El Poderoso Victoria</h3>
+                <span>119 min | Drama</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/cenicienta.jpg" alt="">
+                </div>
+                <h3>Tres deseos para Cenicienta</h3>
+                <span>85 min | Drama</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="./img/mardesangre.jpg" alt="">
+                </div>
+                <h3>Mar de Sangre</h3>
+                <span>90 min | Terror</span>
+            </div>
         </div>
     </section>
+    <!-- newsletter -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribanse para obetener <br> nuestras actualizaciones</h2>
+        <form action="">
+            <input type="email" class='email' placeholder=" Ingrese sus email..." required>
+            <input type="submit" value="Suscribe" class="btn">
+        </form>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie' ></i>CineDICIS
+        </a>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+    </section>
+
+    <!-- copyrigths -->
+    <div class="copyright">
+        <p>&#115; Ponce&Iniguez All Rights Reserverd.</p>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- link a js custom -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
